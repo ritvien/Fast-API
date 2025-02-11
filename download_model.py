@@ -1,6 +1,8 @@
 import gdown  
 
-url = "https://drive.google.com/drive/folders/1VzubGg1UjkcT8_ky2_W9hQS_scAAUFLb"  
+file_id = "1lyUhbdEaFx1mQn5vqPIkR8rS3GNrIIa5"
+url = f"https://drive.google.com/uc?id={file_id}"  
 output = "model/gender_model.onnx"  
 
 gdown.download(url, output, quiet=False)
+print("Download model completed!")  
